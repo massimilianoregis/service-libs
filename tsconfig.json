@@ -1,0 +1,14 @@
+{
+   "compilerOptions": {
+      "lib": [
+         "es6"
+      ],
+      "allowJs": true,
+      "target": "es2017",      
+      "moduleResolution": "node",
+      "outDir": "./build",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "sourceMap": true
+   }
+}

@@ -1,0 +1,35 @@
+ /**
+ * GET {{endpoint}}/{id}
+ * @summary get a single {{subject}}
+ * 
+ * @return {{{subject}}} 200 - success response
+ * @tags {{subject}}
+ */
+ /**
+ * GET {{endpoint}}
+ * @summary get a list of {{subject}}
+ * 
+ * @return {array<{{subject}}>} 200 - success response
+ * @tags {{subject}}
+ */
+/**
+ * POST {{endpoint}}
+ * @summary create a new {{subject}}
+ * 
+ * @return {{{subject}}} 200 - success response
+ * @tags {{subject}}
+ */
+/**
+ * PUT {{endpoint}}/{id}
+ * @summary change a {{subject}}
+ * 
+ * @return {{{subject}}} 200 - success response
+ * @tags {{subject}}
+ */
+/**
+ * DELETE {{endpoint}}/{id}
+ * @summary delete a {{subject}}
+ * @param {string} country.path.required - name param description
+ * @return {{{subject}}} 200 - success response
+ * @tags {{subject}}
+ */

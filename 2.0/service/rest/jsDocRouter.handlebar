@@ -1,0 +1,80 @@
+
+{{#endpoints}} 
+{{#method 'GET'}}
+/**
+ * GET {{../root}}{{endpoint}}
+ * @summary autogenerate
+ * @return {{#if output}}{{braces output}}{{/if}} 200 - success response
+ * @tags {{../type}}
+ * @security BearerAuth
+ */
+ {{/method}}
+ {{#method 'POST'}}
+/**
+ * POST {{../root}}{{endpoint}}
+ * @summary autogenerate{{#if input/body}}
+ * @param {{braces input/body}} request.body.required - {{output}}{{/if}}
+ * @return {{#if output}}{{braces output}}{{/if}} 200 - success response
+ * @tags {{../type}}
+ * @security BearerAuth
+ */
+ {{/method}}
+ {{#method 'PUT'}}
+/**
+ * PUT {{../root}}{{endpoint}}
+ * @summary autogenerate{{#if input/path/id}}
+ * @param {{braces 'string'}} id.path.required - id{{/if}}{{#if input/body}}
+ * @param {{braces input/body}} request.body.required - {{output}}{{/if}}
+ * @return {{#if output}}{{braces output}}{{/if}} 200 - success response
+ * @tags {{../type}}
+ * @security BearerAuth
+ */
+ {{/method}}
+ {{#method 'DELETE'}}
+/**
+ * DELETE {{../root}}{{endpoint}}
+ * @summary autogenerate{{#if input/path/id}}
+ * @param {{braces 'string'}} id.path.required - id{{/if}}{{#if input/body}}
+ * @param {{braces input/body}} request.body.required - {{output}}{{/if}}
+ * @return {{#if output}}{{braces output}}{{/if}} 200 - success response
+ * @tags {{../type}}
+ * @security BearerAuth
+ */
+ {{/method}}
+
+ {{#method 'ALL'}}
+/**
+ * GET {{../root}}{{endpoint}}
+ * @summary autogenerate
+ * @return {{#if output}}{{braces output}}{{/if}} 200 - success response
+ * @tags {{../type}}
+ * @security BearerAuth
+ */
+/**
+ * POST {{../root}}{{endpoint}}
+ * @summary autogenerate
+ {{#if input/body}}* @param {{braces input/body}} request.body.required - {{output}}{{/if}}
+ * @return {{#if output}}{{braces output}}{{/if}} 200 - success response
+ * @tags {{../type}}
+ * @security BearerAuth
+ */
+/**
+ * PUT {{../root}}{{endpoint}}
+ * @summary autogenerate
+ {{#if input/path/id}}* @param {{braces 'string'}} id.path.required - id{{/if}}
+ {{#if input/body}}* @param {{braces input/body}} request.body.required - {{output}}{{/if}}
+ * @return {{#if output}}{{braces output}}{{/if}} 200 - success response
+ * @tags {{../type}}
+ * @security BearerAuth
+ */
+/**
+ * DELETE {{../root}}{{endpoint}}
+ * @summary autogenerate
+ {{#if input/path/id}}* @param {{braces 'string'}} id.path.required - id{{/if}}
+ {{#if input/body}}* @param {{braces input/body}} request.body.required - {{output}}{{/if}}
+ * @return {{#if output}}{{braces output}}{{/if}} 200 - success response
+ * @tags {{../type}}
+ * @security BearerAuth
+ */
+ {{/method}}
+ {{/endpoints}}
